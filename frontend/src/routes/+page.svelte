@@ -5,6 +5,7 @@
 	let allCols: string[] = $state([]);
 	let featureCols: string[] = $state([]);
 
+
 	$inspect(featureCols, allCols, target, file, modelType);
 
 	async function toArray() {
@@ -59,8 +60,8 @@
 	}
 </script>
 
-<section class="mt-16">
-	<div class="grid grid-cols-2">
+<section class="mt-16 mb-16 rounded-xl bg-gray-100 p-5 shadow-2xl">
+	<div class="grid grid-cols-2 mt-5">
 		<div>
 			<h1>Como utilizar</h1>
 			<p class="mt-4">1. Faça o upload da sua base de dados.</p>
@@ -87,7 +88,7 @@
 					<h1>*Certifique-se que o seus dados estão no formato .csv</h1>
 					<label
 						for="button"
-						class="cursor-pointer rounded-xl bg-indigo-600 px-4 py-2 text-center text-white transition-colors hover:bg-indigo-500"
+						class="cursor-pointer rounded-xl bg-yellow-500 px-4 py-2 text-center text-white transition-colors hover:bg-yellow-400"
 						>Upload CSV file</label
 					>
 					<input
@@ -100,40 +101,39 @@
 					/>
 				</div>
 			</div>
-			<div class="rounded-xl px-2 py-3">
+				<h1>Selecione Target <span class="text-sm text-gray-800">*(Upload da tabela é nescessário)</span></h1>
 				{#if target}
-					{target}
-				{:else}
-					<h1>Selecione Target</h1>
+					<div class="flex gap-2 bg-gray-200 rounded-xl px-2 py-3">
+						<h1>Target:</h1>
+						<h1>"{target}"</h1>
+					</div>
 				{/if}
-			</div>
-
 			{#if allCols}
 				<div class="grid grid-cols-2 gap-2">
 					{#each allCols as col}
 						<button
 							class="overflow-x-hidden rounded-md px-2 text-start {col === target
-								? 'bg-indigo-500 text-white'
+								? 'bg-yellow-500 text-white'
 								: 'bg-gray-300'}"
 							onclick={() => addToTarget(col)}>{col}</button
 						>
 					{/each}
 				</div>
 			{/if}
-			<div class="rounded-xl px-2 py-3">
-				{#if featureCols.length > 0}
-					{featureCols.join(', ')}
-				{:else}
-					<h1>Selecione Features</h1>
-				{/if}
-			</div>
+			<h1 class="mt-5">Selecione Features <span class="text-sm text-gray-800">*(Upload da tabela é nescessário)</span></h1>
+			{#if featureCols.length > 0}
+				<div class="flex gap-2 bg-gray-200 rounded-xl px-2 py-3">
+					<h1>Features:</h1>
+					<h1>"{featureCols.join(', ')}"</h1>
+				</div>
+			{/if}
 
 			{#if allCols}
 				<div class="grid grid-cols-2 gap-2">
 					{#each allCols as col}
 						<button
 							class=" overflow-x-hidden rounded-md {featureCols.includes(col)
-								? 'bg-indigo-500 text-white'
+								? 'bg-yellow-400 text-white'
 								: 'bg-gray-300'}"
 							onclick={() => addToFeatures(col)}>{col}</button
 						>
@@ -142,7 +142,7 @@
 			{/if}
 
 			<div>
-				<h1>Modelos disponiveis</h1>
+				<h1 class="mt-5">Modelos disponiveis</h1>
 				<div class="flex justify-center gap-5 rounded-xl bg-gray-300 px-2 py-3">
 					<!-- <h1 class="font-semibold">LightGBM</h1>
 					<input type="radio" bind:group={modelType} value="LightGBM" /> -->
@@ -152,7 +152,7 @@
 			</div>
 
 			<div
-				class="flex cursor-pointer justify-center rounded-xl bg-indigo-600 px-2 py-3 text-white transition-all hover:bg-indigo-500"
+				class="flex cursor-pointer justify-center rounded-xl bg-yellow-500 px-2 py-3 text-white transition-all hover:bg-yellow-400"
 			>
 				<button class="cursor-pointer" onclick={enviarForm}>Testar Modelo</button>
 			</div>

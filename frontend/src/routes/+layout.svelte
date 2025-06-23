@@ -4,12 +4,16 @@
 	let { children } = $props();
 </script>
 
-<div class="flex bg-indigo-500 h-20 text-white">
-	<nav class="flex container mx-auto justify-between items-center  w-full">
-		<h1>Ciências de Dados - PUC MG</h1>
-		<a target="_blank" href="https://github.com/caioceo/machineLearning-webapp">Repositório GitHub</a>
-	</nav>
-</div>
+<div class="">
+		<nav class="flex items-center rounded-md bg-yellow-500 px-4 py-3 justify-between">
+			<div class="flex flex-col">
+				<span class="text-lg font-bold text	">Machine Learning Web Aplication</span>
+				<span class="text-sm text	">PUC Minas • Ciências de Dados</span>
+			</div>
+			<a class="ml-4 rounded-md bg-white px-4 py-2 font-semibold text-yellow-600 transition-colors hover:" href="https://github.com/caioceo/machineLearning-webapp" target="_blank" rel="noopener noreferrer">GitHub</a>
+		</nav>
+	</div>
+
 <div class="container mx-auto">
-{@render children()}
+	{@render children()}
 </div>
