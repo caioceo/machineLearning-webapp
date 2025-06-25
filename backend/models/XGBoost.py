@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import base64
+import io
 from xgboost import XGBClassifier
 
 # Modelagem e Pré-processamento
