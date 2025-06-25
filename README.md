@@ -36,6 +36,9 @@ O projeto consiste em uma aplicação web cujo objetivo é disponibilizar, de fo
 
 Siga o passo a passo abaixo para rodar o projeto localmente:
 
+
+Tutorial no youtube https://youtu.be/6p2G6xTxX0M
+
 ### 1. Clone o repositório
 
 ```bash
@@ -67,7 +70,6 @@ npm run dev
 ---
 
 Pronto! Agora o backend estará rodando em um terminal e o frontend em outro. Acesse a aplicação web pelo endereço informado no terminal do frontend (normalmente http://localhost:5173).
-
 
 ### Regras e Restrições
 
