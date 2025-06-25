@@ -29,7 +29,7 @@ O projeto consiste em uma aplicação web cujo objetivo é disponibilizar, de fo
 2. **Seleção Dinâmica:** O sistema identifica automaticamente as colunas disponíveis para seleção do target e das features.
 3. **Previsão:** O sistema executa o modelo preditivo sobre os dados enviados, retornando as previsões do target binário.
 4. **Interpretabilidade:** O sistema apresenta as features mais determinantes na previsão, auxiliando o usuário a entender os fatores que impactam o resultado.
-5. **Visualização de Resultados:** O frontend exibe gráficos e estatísticas gerados pela API, permitindo análise visual e detalhada dos resultados e do desempenho do modelo.
+5. <!-- 5. **Visualização de Resultados:** O frontend exibe gráficos e estatísticas gerados pela API, permitindo análise visual e detalhada dos resultados e do desempenho do modelo. -->
 
 
 ## Como Utilizar
