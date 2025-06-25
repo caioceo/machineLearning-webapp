@@ -5,8 +5,7 @@
 	let allCols: string[] = $state([]);
 	let featureCols: string[] = $state([]);
 
-
-	$inspect(featureCols, allCols, target, file, modelType);
+	// $inspect(featureCols, allCols, target, file, modelType);
 
 	async function toArray() {
 		if (!file) {
@@ -60,6 +59,7 @@
 	}
 </script>
 
+<!--Formulário-->
 <section class="mt-16 mb-16 rounded-xl bg-gray-100 p-5 shadow-2xl">
 	<div class="grid grid-cols-2 mt-5">
 		<div>
@@ -88,7 +88,7 @@
 					<h1>*Certifique-se que o seus dados estão no formato .csv</h1>
 					<label
 						for="button"
-						class="cursor-pointer rounded-xl bg-yellow-500 px-4 py-2 text-center text-white transition-colors hover:bg-yellow-400"
+						class="cursor-pointer rounded-xl bg-yellow-500 px-4 py-2 text-center text-white transition-colors duration-300 hover:bg-yellow-400"
 						>Upload CSV file</label
 					>
 					<input
@@ -143,19 +143,28 @@
 
 			<div>
 				<h1 class="mt-5">Modelos disponiveis</h1>
-				<div class="flex justify-center gap-5 rounded-xl bg-gray-300 px-2 py-3">
-					<!-- <h1 class="font-semibold">LightGBM</h1>
-					<input type="radio" bind:group={modelType} value="LightGBM" /> -->
-					<h1 class="font-semibold">XGBoost</h1>
-					<input type="radio" bind:group={modelType} value="XGBoost" />
+				<div class="mt-2 flex justify-center gap-5 rounded-xl bg-gray-300 px-2 py-3">
+					<div class="flex gap-3 items-center">
+						<h1>XGBoost</h1>
+						<input type="radio" bind:group={modelType} value="XGBoost" />
+					</div>
+					<div class="flex gap-2 text-sm items-center">
+						<h1 class="">LightGBM</h1>
+						<p class="italic">coming soon</p>
+					</div>
+					<!-- <input type="radio" bind:group={modelType} value="LightGBM" /> -->
 				</div>
 			</div>
 
 			<div
-				class="flex cursor-pointer justify-center rounded-xl bg-yellow-500 px-2 py-3 text-white transition-all hover:bg-yellow-400"
+				class="flex cursor-pointer justify-center rounded-xl bg-yellow-500 px-2 py-3 text-white duration-300 hover:bg-yellow-400"
 			>
 				<button class="cursor-pointer" onclick={enviarForm}>Testar Modelo</button>
 			</div>
 		</div>
 	</div>
 </section>
+
+
+
+
