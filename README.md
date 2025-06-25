@@ -31,7 +31,45 @@ O projeto consiste em uma aplicação web cujo objetivo é disponibilizar, de fo
 4. **Interpretabilidade:** O sistema apresenta as features mais determinantes na previsão, auxiliando o usuário a entender os fatores que impactam o resultado.
 5. **Visualização de Resultados:** O frontend exibe gráficos e estatísticas gerados pela API, permitindo análise visual e detalhada dos resultados e do desempenho do modelo.
 
-## Regras e Restrições
+
+## Como Utilizar
+
+Siga o passo a passo abaixo para rodar o projeto localmente:
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/caioceo/machineLearning-webapp
+```
+
+---
+
+### 2. Configuração e execução do backend (servidor)
+
+```bash
+cd machineLearning-webapp/backend
+pip install -r requirements.txt
+flask --app main.py run
+```
+
+---
+
+### 3. Configuração e execução do frontend (interface web)
+
+Abra um novo terminal e execute:
+
+```bash
+cd machineLearning-webapp/frontend
+npm install
+npm run dev
+```
+
+---
+
+Pronto! Agora o backend estará rodando em um terminal e o frontend em outro. Acesse a aplicação web pelo endereço informado no terminal do frontend (normalmente http://localhost:5173).
+
+
+### Regras e Restrições
 
 - O dataset enviado pelo usuário deve conter:
   - Um target binário (apenas dois valores possíveis).
