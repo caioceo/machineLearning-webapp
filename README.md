@@ -2,9 +2,9 @@
 
 ## Visão Geral
 
-Este repositório é uma extensão prática do trabalho desenvolvido na disciplina de graduação, cujo foco principal está no estudo da desigualdade regional em morbidade e mortalidade no Brasil. O projeto original, baseado em análise exploratória de dados e modelagem em notebooks, pode ser acessado em: [**desigualdade-regional-morbidade**](https://github.com/caioceo/desigualdade-regional-morbidade).
+Este repositório é uma extensão prática do trabalho desenvolvido na disciplina de graduação, cujo foco principal está no estudo e análise sobre o desafio de profissionais juniors na adoção de LLM's no Brasil e a satisfação profissional. O projeto original, baseado em análise exploratória de dados e modelagem em notebooks, pode ser acessado em: [**desafios_de_profissionais_jr**](https://github.com/caioceo/desafios_de_profissionais_jr).
 
-Enquanto o projeto de origem concentra-se na investigação estatística e na compreensão dos padrões de saúde entre regiões, esta aplicação web em Python e Svelte transforma aqueles resultados em uma interface interativa, permitindo a visualização de modelos e métricas de forma mais acessível. Assim, o machineLearning-webapp funciona como uma camada de aplicação sobre o estudo acadêmico, aproximando o conteúdo técnico do contexto real de uso, seja para demonstração em sala de aula, apresentação de resultados ou exploração de cenários pelos usuários finais.
+Enquanto o projeto de origem concentra-se na investigação estatística e na compreensão dos padrões entre os profissionais tech, esta aplicação web em Python e Svelte transforma aqueles resultados em uma interface interativa, permitindo a visualização de modelos e métricas de forma mais acessível. Assim, o machineLearning-webapp funciona como uma camada de aplicação sobre o estudo acadêmico, aproximando o conteúdo técnico do contexto real de uso, seja para demonstração em sala de aula, apresentação de resultados ou exploração de cenários pelos usuários finais.
 
 ## Arquitetura e Tecnologias Utilizadas
 
